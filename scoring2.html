@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Scoring | Turnaj Fantasy Football</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css"/>
+  <script defer src="app.js"></script>
+</head>
+<body>
+<div class="nav-backdrop" id="navBackdrop"></div>
+<header class="nav">
+  <div class="nav-container">
+    <a href="index.html" class="logo">
+      <img src="images/logo.png" alt="Turnaj Logo" class="logo-image">
+    </a>
+    <nav class="nav-links" id="navLinks">
+      <button class="close-nav" id="closeNav" aria-label="Close menu">×</button>
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="how-it-works.html" class="nav-link">How It Works</a>
+      <a href="leagues.html" class="nav-link">Leagues</a>
+      <a href="scoring.html" class="nav-link">Scoring</a>
+      <a href="#" class="btn"><i class="fa-solid fa-rocket"></i> Get Started</a>
+    </nav>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open menu">☰</button>
+  </div>
+</header>
+
+<section class="hero hero-small" style="background:url('https://images.unsplash.com/photo-1574629810360-7efbbe195018?w=1400&fit=crop') center/cover no-repeat;">
+  <div class="hero-overlay"></div>
+  <div class="hero-container">
+    <div class="hero-text">
+      <h1>Smarter Scoring.<br>Real Performance.</h1>
+      <p>Points that reflect actual impact on the pitch — not just goals and assists.</p>
+      <a href="#" class="primary-btn"><i class="fa-solid fa-star"></i> See Full System</a>
+    </div>
+  </div>
+</section>
+
+<section class="scoring-intro">
+  <h2>How Points Are Calculated</h2>
+  <p style="text-align:center;color:#666;max-width:600px;margin:0 auto 48px;">Every action on the pitch counts. Our system rewards quality play across all positions fairly and transparently.</p>
+  <div class="score-grid">
+    <div class="score-item">
+      <div class="score-icon"><i class="fa-solid fa-futbol"></i></div>
+      <div>Goals & Assists</div>
+    </div>
+    <div class="score-item">
+      <div class="score-icon"><i class="fa-solid fa-shield-halved"></i></div>
+      <div>Clean Sheets</div>
+    </div>
+    <div class="score-item">
+      <div class="score-icon"><i class="fa-solid fa-person-running"></i></div>
+      <div>Pressing & Positioning</div>
+    </div>
+    <div class="score-item">
+      <div class="score-icon"><i class="fa-solid fa-hourglass-end"></i></div>
+      <div>Minutes Played</div>
+    </div>
+    <div class="score-item">
+      <div class="score-icon"><i class="fa-solid fa-hand"></i></div>
+      <div>Saves & Blocks</div>
+    </div>
+    <div class="score-item">
+      <div class="score-icon"><i class="fa-solid fa-square-xmark"></i></div>
+      <div>Cards & Penalties</div>
+    </div>
+  </div>
+</section>
+
+<section class="scoring-core dark-section">
+  <h2>Points Breakdown by Position</h2>
+  <div class="score-card-grid">
+    <div class="score-card">
+      <span class="score-icon">🧤</span>
+      <h3>Goalkeeper</h3>
+      <p>Clean sheet: +6pts. Save: +1pt each. Penalty save: +5pts. Goal conceded (per 2): -1pt. Yellow card: -1pt. Red card: -3pts.</p>
+    </div>
+    <div class="score-card">
+      <span class="score-icon">🛡️</span>
+      <h3>Defender</h3>
+      <p>Clean sheet: +4pts. Goal scored: +6pts. Assist: +3pts. 60+ mins: +2pts. Yellow card: -1pt. Red card: -3pts.</p>
+    </div>
+    <div class="score-card">
+      <span class="score-icon">⚡</span>
+      <h3>Midfielder</h3>
+      <p>Goal scored: +5pts. Assist: +3pts. Clean sheet: +1pt. 60+ mins: +2pts. Yellow card: -1pt. Red card: -3pts.</p>
+    </div>
+    <div class="score-card">
+      <span class="score-icon">🎯</span>
+      <h3>Forward</h3>
+      <p>Goal scored: +4pts. Assist: +3pts. 60+ mins: +2pts. Missed penalty: -2pts. Yellow card: -1pt. Red card: -3pts.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Bonus Points System</h2>
+  <div class="overview-grid">
+    <div>
+      <h4><i class="fa-solid fa-star" style="color:#4f1c93;margin-right:8px"></i> Performance Bonus</h4>
+      <p>The top 3 performers each gameweek earn bonus points based on our proprietary BPS (Bonus Points System) algorithm.</p>
+    </div>
+    <div>
+      <h4><i class="fa-solid fa-bolt" style="color:#4f1c93;margin-right:8px"></i> Captain Multiplier</h4>
+      <p>Your captain earns double points. Choose wisely — it's the single biggest decision each gameweek.</p>
+    </div>
+    <div>
+      <h4><i class="fa-solid fa-rotate" style="color:#4f1c93;margin-right:8px"></i> Auto-Substitutions</h4>
+      <p>If a player doesn't play, your bench automatically substitutes them in to protect your points.</p>
+    </div>
+  </div>
+</section>
+
+<section class="cta-strip">
+  <h2>Ready to Put Your Knowledge to the Test?</h2>
+  <a href="#" class="primary-btn dark"><i class="fa-solid fa-flag-checkered"></i> Join Turnaj Now</a>
+</section>
+
+<footer class="footer">
+  <div class="footer-content">
+    <div class="footer-grid">
+      <div>
+        <h3>TURN<span>AJ</span></h3>
+        <p>Fantasy football reimagined for modern competition.</p>
+      </div>
+      <div>
+        <h4>Product</h4>
+        <a href="leagues.html">Leagues</a>
+        <a href="scoring.html">Scoring</a>
+        <a href="rewards.html">Rewards</a>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <a href="about.html">About</a>
+        <a href="careers.html">Careers</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div>
+        <h4>Legal</h4>
+        <a href="terms.html">Terms</a>
+        <a href="privacy.html">Privacy</a>
+      </div>
+    </div>
+    <div class="newsletter-section">
+      <h4>Subscribe to Our Newsletter</h4>
+      <p>Get the latest updates and tips straight to your inbox.</p>
+      <div class="newsletter-form">
+        <input type="email" placeholder="Enter your email address" class="newsletter-input">
+        <button class="newsletter-btn"><i class="fa-solid fa-envelope"></i> Subscribe</button>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">© 2026 Turnaj Fantasy Sports. All rights reserved.</div>
+</footer>
+</body>
+</html>

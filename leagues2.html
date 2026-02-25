@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Leagues | Turnaj Fantasy Football</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css"/>
+  <script defer src="app.js"></script>
+</head>
+<body>
+<div class="nav-backdrop" id="navBackdrop"></div>
+<header class="nav">
+  <div class="nav-container">
+    <a href="index.html" class="logo">
+      <img src="images/logo.png" alt="Turnaj Logo" class="logo-image">
+    </a>
+    <nav class="nav-links" id="navLinks">
+      <button class="close-nav" id="closeNav" aria-label="Close menu">×</button>
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="how-it-works.html" class="nav-link">How It Works</a>
+      <a href="leagues.html" class="nav-link">Leagues</a>
+      <a href="scoring.html" class="nav-link">Scoring</a>
+      <a href="https://game.turnaj.mobi/auth/login" class="btn"><i class="fa-solid fa-rocket"></i> Get Started</a>
+    </nav>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open menu">☰</button>
+  </div>
+</header>
+
+<section class="hero hero-small" style="background:url('https://images.unsplash.com/photo-1508098682722-e99c43a406b2?w=1400&fit=crop') center/cover no-repeat;">
+  <div class="hero-overlay"></div>
+  <div class="hero-container">
+    <div class="hero-text">
+      <h1>Leagues for Every<br>Type of Player.</h1>
+      <p>From casual seasons to high-stakes competitions — find your arena.</p>
+      <a href="#" class="primary-btn"><i class="fa-solid fa-trophy"></i> Browse Leagues</a>
+    </div>
+  </div>
+</section>
+
+<section class="leagues-section">
+  <h2>Choose Your League</h2>
+  <div class="league-grid">
+    <div class="league-card highlight">
+      <span class="league-tag">Popular</span>
+      <h3>Classic Season League</h3>
+      <p class="league-desc">Compete across the full season. The ultimate test of fantasy football knowledge and consistency.</p>
+      <ul class="league-features">
+        <li>38-week season</li>
+        <li>Up to 20 managers</li>
+        <li>Weekly & overall rankings</li>
+        <li>Custom league name & badge</li>
+      </ul>
+      <a href="#" class="primary-btn">Join Now</a>
+    </div>
+    <div class="league-card">
+      <span class="league-tag fast">Fast</span>
+      <h3>Weekly Battles</h3>
+      <p class="league-desc">No long-term commitment. Pick a squad each week and battle it out for weekly glory.</p>
+      <ul class="league-features">
+        <li>Fresh squad every week</li>
+        <li>Head-to-head format</li>
+        <li>Weekly prizes</li>
+        <li>No season carry-over</li>
+      </ul>
+      <a href="#" class="primary-btn">Join Now</a>
+    </div>
+    <div class="league-card">
+      <span class="league-tag private">Private</span>
+      <h3>Private League</h3>
+      <p class="league-desc">Invite your friends, set your own rules, and make it personal. Your league, your way.</p>
+      <ul class="league-features">
+        <li>Invite-only access</li>
+        <li>Custom scoring rules</li>
+        <li>Private leaderboard</li>
+        <li>Admin controls</li>
+      </ul>
+      <a href="#" class="primary-btn">Create League</a>
+    </div>
+  </div>
+</section>
+
+<section class="dark-section">
+  <h2>How Leagues Work</h2>
+  <div class="explain-grid">
+    <div>
+      <h4><i class="fa-solid fa-user-plus" style="color:#4f1c93;margin-right:8px"></i> Create or Join</h4>
+      <p>Start your own league or enter a public one in seconds. No complicated setup required.</p>
+    </div>
+    <div>
+      <h4><i class="fa-solid fa-users" style="color:#4f1c93;margin-right:8px"></i> Invite Managers</h4>
+      <p>Share your unique league code with friends. They join instantly and you're ready to compete.</p>
+    </div>
+    <div>
+      <h4><i class="fa-solid fa-chart-line" style="color:#4f1c93;margin-right:8px"></i> Track Standings</h4>
+      <p>Live leaderboards update automatically after every match. See exactly where you stand.</p>
+    </div>
+    <div>
+      <h4><i class="fa-solid fa-medal" style="color:#4f1c93;margin-right:8px"></i> Win Rewards</h4>
+      <p>Top finishers earn recognition, badges, and prizes depending on the league type.</p>
+    </div>
+  </div>
+</section>
+
+<section class="cta-strip">
+  <h2>Ready to Compete?</h2>
+  <a href="#" class="primary-btn dark"><i class="fa-solid fa-flag-checkered"></i> Join Turnaj Now</a>
+</section>
+
+<footer class="footer">
+  <div class="footer-content">
+    <div class="footer-grid">
+      <div>
+        <h3>TURN<span>AJ</span></h3>
+        <p>Fantasy football reimagined for modern competition.</p>
+      </div>
+      <div>
+        <h4>Product</h4>
+        <a href="leagues.html">Leagues</a>
+        <a href="scoring.html">Scoring</a>
+        <a href="rewards.html">Rewards</a>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <a href="about.html">About</a>
+        <a href="careers.html">Careers</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div>
+        <h4>Legal</h4>
+        <a href="terms.html">Terms</a>
+        <a href="privacy.html">Privacy</a>
+      </div>
+    </div>
+    <div class="newsletter-section">
+      <h4>Subscribe to Our Newsletter</h4>
+      <p>Get the latest updates and tips straight to your inbox.</p>
+      <div class="newsletter-form">
+        <input type="email" placeholder="Enter your email address" class="newsletter-input">
+        <button class="newsletter-btn"><i class="fa-solid fa-envelope"></i> Subscribe</button>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">© 2026 Turnaj Fantasy Sports. All rights reserved.</div>
+</footer>
+</body>
+</html>

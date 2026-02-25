@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact | Turnaj Fantasy Football</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css"/>
+  <script defer src="app.js"></script>
+  <style>
+    .contact-grid {
+      display: grid;
+      gap: 48px;
+      grid-template-columns: 1fr 1fr;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    @media (max-width: 768px) {
+      .contact-grid { grid-template-columns: 1fr; }
+    }
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    .contact-input {
+      padding: 12px 16px;
+      border: 2px solid rgba(79,28,147,0.2);
+      border-radius: 8px;
+      font-size: 0.95rem;
+      background: #fff;
+      color: #1a1a1a;
+      transition: all 0.25s ease;
+      font-family: inherit;
+    }
+    .contact-input:focus {
+      outline: none;
+      border-color: #4f1c93;
+      box-shadow: 0 0 0 3px rgba(79,28,147,0.1);
+    }
+    textarea.contact-input {
+      min-height: 140px;
+      resize: vertical;
+    }
+    .contact-info-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+      margin-bottom: 28px;
+    }
+    .contact-info-icon {
+      width: 44px;
+      height: 44px;
+      background: linear-gradient(135deg,#4f1c93,#3d1570);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-size: 18px;
+      flex-shrink: 0;
+    }
+    .contact-info-item h4 { margin-bottom: 4px; color: #4f1c93; font-size:0.95rem; }
+    .contact-info-item p { color: #666; font-size:0.9rem; margin:0; }
+  </style>
+</head>
+<body>
+<div class="nav-backdrop" id="navBackdrop"></div>
+<header class="nav">
+  <div class="nav-container">
+    <a href="index.html" class="logo">
+      <img src="images/logo.png" alt="Turnaj Logo" class="logo-image">
+    </a>
+    <nav class="nav-links" id="navLinks">
+      <button class="close-nav" id="closeNav" aria-label="Close menu">×</button>
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="how-it-works.html" class="nav-link">How It Works</a>
+      <a href="leagues.html" class="nav-link">Leagues</a>
+      <a href="scoring.html" class="nav-link">Scoring</a>
+      <a href="#" class="btn"><i class="fa-solid fa-rocket"></i> Get Started</a>
+    </nav>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open menu">☰</button>
+  </div>
+</header>
+
+<section class="hero hero-small" style="background:url('https://images.unsplash.com/photo-1516321497487-e288fb19713f?w=1400&fit=crop') center/cover no-repeat;">
+  <div class="hero-overlay"></div>
+  <div class="hero-container">
+    <div class="hero-text">
+      <h1>Get in Touch.</h1>
+      <p>Questions, feedback, or just want to talk football? We'd love to hear from you.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Contact Us</h2>
+  <div class="contact-grid">
+    <div>
+      <div class="contact-info-item">
+        <div class="contact-info-icon"><i class="fa-solid fa-envelope"></i></div>
+        <div>
+          <h4>Email Us</h4>
+          <p>hello@turnaj.com</p>
+        </div>
+      </div>
+      <div class="contact-info-item">
+        <div class="contact-info-icon"><i class="fa-solid fa-headset"></i></div>
+        <div>
+          <h4>Support</h4>
+          <p>support@turnaj.com</p>
+        </div>
+      </div>
+      <div class="contact-info-item">
+        <div class="contact-info-icon"><i class="fa-brands fa-twitter"></i></div>
+        <div>
+          <h4>Twitter / X</h4>
+          <p>@TurnajFF</p>
+        </div>
+      </div>
+      <div class="contact-info-item">
+        <div class="contact-info-icon"><i class="fa-brands fa-instagram"></i></div>
+        <div>
+          <h4>Instagram</h4>
+          <p>@TurnajFF</p>
+        </div>
+      </div>
+    </div>
+    <div>
+      <form class="contact-form" onsubmit="handleContact(event)">
+        <input type="text" class="contact-input" placeholder="Your name" required>
+        <input type="email" class="contact-input" placeholder="Your email" required>
+        <input type="text" class="contact-input" placeholder="Subject">
+        <textarea class="contact-input" placeholder="Your message..." required></textarea>
+        <button type="submit" class="primary-btn" style="width:100%"><i class="fa-solid fa-paper-plane"></i> Send Message</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<section class="cta-strip">
+  <h2>Want to Join the Team?</h2>
+  <a href="careers.html" class="primary-btn dark"><i class="fa-solid fa-briefcase"></i> See Open Roles</a>
+</section>
+
+<footer class="footer">
+  <div class="footer-content">
+    <div class="footer-grid">
+      <div>
+        <h3>TURN<span>AJ</span></h3>
+        <p>Fantasy football reimagined for modern competition.</p>
+      </div>
+      <div>
+        <h4>Product</h4>
+        <a href="leagues.html">Leagues</a>
+        <a href="scoring.html">Scoring</a>
+        <a href="rewards.html">Rewards</a>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <a href="about.html">About</a>
+        <a href="careers.html">Careers</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div>
+        <h4>Legal</h4>
+        <a href="terms.html">Terms</a>
+        <a href="privacy.html">Privacy</a>
+      </div>
+    </div>
+    <div class="newsletter-section">
+      <h4>Subscribe to Our Newsletter</h4>
+      <p>Get the latest updates and tips straight to your inbox.</p>
+      <div class="newsletter-form">
+        <input type="email" placeholder="Enter your email address" class="newsletter-input">
+        <button class="newsletter-btn"><i class="fa-solid fa-envelope"></i> Subscribe</button>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">© 2026 Turnaj Fantasy Sports. All rights reserved.</div>
+</footer>
+
+<script>
+function handleContact(e) {
+  e.preventDefault();
+  const btn = e.target.querySelector('button[type="submit"]');
+  btn.innerHTML = '<i class="fa-solid fa-check"></i> Message Sent!';
+  btn.style.background = '#2a9d3e';
+  setTimeout(() => {
+    btn.innerHTML = '<i class="fa-solid fa-paper-plane"></i> Send Message';
+    btn.style.background = '';
+    e.target.reset();
+  }, 3000);
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Scoring System | Turnaj</title>
+
+  <!-- STYLES -->
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- SCRIPT -->
+  <script defer src="app.js"></script>
+</head>
+<body>
+
+<!-- BACKDROP (MOBILE ONLY) -->
+<div class="nav-backdrop" id="navBackdrop"></div>
+
+<!-- NAVBAR -->
+<header class="nav">
+  <div class="nav-container">
+    <div class="logo">
+      <img src="images/logo.png" alt="Turnaj Logo" class="logo-image">
+    </div>
+
+    <nav class="nav-links" id="navLinks">
+      <button class="close-nav" id="closeNav" aria-label="Close menu">×</button>
+      <a href="index.html">Home</a>
+      <a href="how-it-works.html">How It Works</a>
+      <a href="leagues.html">Leagues</a>
+      <a href="scoring.html">Scoring</a>
+      <a href="#" class="btn">Get Started</a>
+    </nav>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Open menu">☰</button>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero hero-small">
+  <div class="hero-overlay"></div>
+  <div class="hero-text">
+    <h1>Scoring That Reflects Real Football</h1>
+    <p>
+      Turnaj rewards impact, intelligence, and consistency —
+      not just goals and headlines.
+    </p>
+  </div>
+</section>
+
+<!-- INTRO -->
+<section class="scoring-intro">
+  <div class="section-header">
+    <h2>Built for Fair Competition</h2>
+    <p>
+      Every point is tied to an on-field action.
+      No hidden formulas. No guesswork.
+    </p>
+  </div>
+
+  <div class="intro-highlights">
+    <div>
+      <strong>✓ Performance-Driven</strong>
+      <p>Points reflect real match influence.</p>
+    </div>
+    <div>
+      <strong>✓ Role-Aware</strong>
+      <p>Different positions are scored differently.</p>
+    </div>
+    <div>
+      <strong>✓ Transparent</strong>
+      <p>All scoring logic is visible to managers.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CORE SCORING -->
+<section class="scoring-core dark-section">
+  <div class="section-header">
+    <h2>Core Scoring Categories</h2>
+    <p>
+      These are the actions that define fantasy performance on Turnaj.
+    </p>
+  </div>
+
+  <div class="score-card-grid">
+    <div class="score-card">
+      <span class="score-icon">⚽</span>
+      <h3>Goals & Assists</h3>
+      <p>
+        Attacking contributions earn high rewards,
+        with position-based weighting.
+      </p>
+    </div>
+
+    <div class="score-card">
+      <span class="score-icon">🛡️</span>
+      <h3>Defensive Actions</h3>
+      <p>
+        Tackles, interceptions, blocks, and recoveries
+        contribute steadily to points.
+      </p>
+    </div>
+
+    <div class="score-card">
+      <span class="score-icon">🔒</span>
+      <h3>Clean Sheets</h3>
+      <p>
+        Defensive discipline is rewarded when teams
+        keep opponents scoreless.
+      </p>
+    </div>
+
+    <div class="score-card">
+      <span class="score-icon">⏱️</span>
+      <h3>Minutes Played</h3>
+      <p>
+        Players earn points for consistent involvement
+        across the match.
+      </p>
+    </div>
+
+    <div class="score-card">
+      <span class="score-icon">📊</span>
+      <h3>Work Rate & Pressing</h3>
+      <p>
+        Intelligent movement, pressing, and positioning
+        add value beyond goals.
+      </p>
+    </div>
+
+    <div class="score-card">
+      <span class="score-icon">⚠️</span>
+      <h3>Discipline & Errors</h3>
+      <p>
+        Fouls, cards, and costly mistakes
+        reduce a player's score.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- POSITION WEIGHTING -->
+<section class="scoring-positions">
+  <div class="section-header">
+    <h2>Position-Based Weighting</h2>
+    <p>
+      The same action can mean different things depending
+      on where a player operates.
+    </p>
+  </div>
+
+  <div class="position-grid">
+    <div class="position-card">
+      <h4>Goalkeepers</h4>
+      <p>
+        Saves, clean sheets, and command of the box
+        define goalkeeper scoring.
+      </p>
+    </div>
+
+    <div class="position-card">
+      <h4>Defenders</h4>
+      <p>
+        Defensive actions carry more weight than goals,
+        rewarding discipline and structure.
+      </p>
+    </div>
+
+    <div class="position-card">
+      <h4>Midfielders</h4>
+      <p>
+        Balanced scoring across attacking, defensive,
+        and transitional play.
+      </p>
+    </div>
+
+    <div class="position-card">
+      <h4>Forwards</h4>
+      <p>
+        Goals, assists, and attacking efficiency
+        drive fantasy success.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST -->
+<section class="split">
+  <div>
+    <h2>Data You Can Trust</h2>
+    <p>
+      All scoring is powered by verified match data
+      and post-match validation.
+    </p>
+    <p>
+      This ensures fairness, consistency,
+      and transparency across every league.
+    </p>
+  </div>
+
+  <div class="data-box">
+    <h4>Scoring Integrity</h4>
+    <ul>
+      <li>Live event feeds</li>
+      <li>Official match statistics</li>
+      <li>Post-match verification</li>
+      <li>Manual review for anomalies</li>
+    </ul>
+  </div>
+</section>
+
+<!-- CTA - FIXED (Only one button now) -->
+<section class="cta-strip">
+  <h2>Build Smarter. Score Better.</h2>
+  <button class="primary-btn dark">
+    <i class="fa-solid fa-play" aria-hidden="true"></i> Start Playing Now
+  </button>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-content">
+    <div class="footer-grid">
+      <div>
+        <h3>TURN<span>AJ</span></h3>
+        <p>Fantasy football reimagined for modern competition.</p>
+      </div>
+
+      <div>
+        <h4>Product</h4>
+        <a href="#">Leagues</a>
+        <a href="#">Scoring</a>
+        <a href="#">Rewards</a>
+      </div>
+
+      <div>
+        <h4>Company</h4>
+        <a href="#">About</a>
+        <a href="#">Careers</a>
+        <a href="#">Contact</a>
+      </div>
+
+      <div>
+        <h4>Legal</h4>
+        <a href="#">Terms</a>
+        <a href="#">Privacy</a>
+      </div>
+    </div>
+
+    <div class="newsletter-section">
+      <h4>Subscribe to Our Newsletter</h4>
+      <p>Get the latest updates and tips straight to your inbox.</p>
+      <form class="newsletter-form">
+        <input 
+          type="email" 
+          placeholder="Enter your email address" 
+          required
+          class="newsletter-input"
+        >
+        <button type="submit" class="newsletter-btn">
+          <i class="fa-solid fa-envelope" aria-hidden="true"></i> Subscribe
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    © 2026 Turnaj Fantasy Sports. All rights reserved.
+  </div>
+</footer>
+
+</body>
+</html>

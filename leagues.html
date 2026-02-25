@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Leagues | Turnaj</title>
+
+  <!-- STYLES -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css"/>
+
+  <!-- SCRIPT -->
+  <script defer src="app.js"></script>
+</head>
+<body>
+
+<!-- BACKDROP (MOBILE ONLY) -->
+<div class="nav-backdrop" id="navBackdrop"></div>
+
+<!-- NAVBAR -->
+<header class="nav">
+  <div class="nav-container">
+
+    <div class="logo">
+  <img src="images/logo.png" alt="Turnaj Logo" class="logo-image">
+</div>
+
+    <nav class="nav-links" id="navLinks">
+      <button class="close-nav" id="closeNav" aria-label="Close menu">×</button>
+
+      <a href="index.html">Home</a>
+      <a href="how-it-works.html">How It Works</a>
+      <a href="leagues.html">Leagues</a>
+      <a href="scoring.html">Scoring</a>
+      <a href="#" class="btn"><i class="fa-solid fa-rocket" aria-hidden="true"></i> Get Started</a>
+    </nav>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Open menu">☰</button>
+
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero hero-small">
+  <div class="hero-overlay"></div>
+  <div class="hero-text">
+    <h1>Leagues Built for Every Type of Manager</h1>
+    <p>
+      Whether you thrive in long-term strategy or short,
+      high-intensity battles, Turnaj has a league for you.
+    </p>
+  </div>
+</section>
+
+<!-- LEAGUE TYPES -->
+<section class="leagues-section">
+  <div class="section-header">
+    <h2>League Formats</h2>
+    <p>
+      Choose how you compete and how deep you want the challenge to go.
+    </p>
+  </div>
+
+  <div class="league-grid">
+
+    <div class="league-card highlight">
+      <span class="league-tag">Most Popular</span>
+      <h3>Classic League</h3>
+      <p class="league-desc">
+        A full-season fantasy experience where planning,
+        consistency, and smart transfers decide the champion.
+      </p>
+      <ul class="league-features">
+        <li>Season-long competition</li>
+        <li>Weekly transfers & captain picks</li>
+        <li>Public & private options</li>
+        <li>Global leaderboard</li>
+      </ul>
+      <button class="primary-btn">Join Classic League</button>
+    </div>
+
+    <div class="league-card">
+      <span class="league-tag private">Invite Only</span>
+      <h3>Private League</h3>
+      <p class="league-desc">
+        Compete against friends, coworkers, or communities
+        with custom rules and exclusive rankings.
+      </p>
+      <ul class="league-features">
+        <li>Create or join via invite</li>
+        <li>Custom scoring & rules</li>
+        <li>Group-only rankings</li>
+        <li>Bragging rights guaranteed</li>
+      </ul>
+      <button class="primary-btn">Create Private League</button>
+    </div>
+
+    <div class="league-card">
+      <span class="league-tag fast">Fast Play</span>
+      <h3>Weekly Battles</h3>
+      <p class="league-desc">
+        Short competitions for managers who want quick wins,
+        instant feedback, and fast rewards.
+      </p>
+      <ul class="league-features">
+        <li>One matchweek only</li>
+        <li>No long-term commitment</li>
+        <li>High-intensity scoring</li>
+        <li>Instant rewards</li>
+      </ul>
+      <button class="primary-btn">Play Weekly</button>
+    </div>
+
+  </div>
+</section>
+
+<!-- WHY LEAGUES MATTER -->
+<section class="league-explain dark-section">
+  <div class="section-header">
+    <h2>Why League Choice Matters</h2>
+    <p>
+      Each league format rewards a different style of play.
+      Choose wisely and play to your strengths.
+    </p>
+  </div>
+
+  <div class="explain-grid">
+    <div>
+      <h4>Long-Term Thinkers</h4>
+      <p>
+        Classic leagues reward managers who plan transfers,
+        manage budgets, and stay consistent across the season.
+      </p>
+    </div>
+
+    <div>
+      <h4>Social Competitors</h4>
+      <p>
+        Private leagues are perfect for rivalries,
+        banter, and custom competition with people you know.
+      </p>
+    </div>
+
+    <div>
+      <h4>High-Risk Players</h4>
+      <p>
+        Weekly battles favor bold decisions and aggressive tactics
+        with quick outcomes.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- HOW LEAGUES WORK -->
+<section class="split">
+  <div>
+    <h2>One Account. Multiple Leagues.</h2>
+    <p>
+      You can compete in several leagues at the same time,
+      managing different squads across formats.
+    </p>
+    <p>
+      Each league runs independently, allowing you to test
+      different strategies without compromise.
+    </p>
+  </div>
+
+  <img
+    src="https://images.unsplash.com/photo-1600679472829-3044539ce8ed"
+    alt="Football fans celebrating together"
+  />
+</section>
+
+<!-- CTA -->
+<section class="cta-strip">
+  <h2>Find Your League. Build Your Legacy.</h2>
+  <button class="primary-btn dark"><i class="fa-solid fa-trophy" aria-hidden="true"></i> Start Competing Now</button>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-content">
+    <div class="footer-grid">
+
+      <div>
+        <h3>TURN<span>AJ</span></h3>
+        <p>Fantasy football reimagined for modern competition.</p>
+      </div>
+
+      <div>
+        <h4>Product</h4>
+        <a href="#">Leagues</a>
+        <a href="#">Scoring</a>
+        <a href="#">Rewards</a>
+      </div>
+
+      <div>
+        <h4>Company</h4>
+        <a href="#">About</a>
+        <a href="#">Careers</a>
+        <a href="#">Contact</a>
+      </div>
+
+      <div>
+        <h4>Legal</h4>
+        <a href="#">Terms</a>
+        <a href="#">Privacy</a>
+      </div>
+
+    </div>
+
+    <div class="newsletter-section">
+      <h4>Subscribe to Our Newsletter</h4>
+      <p>Get the latest updates and tips straight to your inbox.</p>
+      <form class="newsletter-form">
+        <input 
+          type="email" 
+          placeholder="Enter your email address" 
+          required
+          class="newsletter-input"
+        >
+        <button type="submit" class="newsletter-btn"><i class="fa-solid fa-envelope" aria-hidden="true"></i> Subscribe</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    © 2026 Turnaj Fantasy Sports. All rights reserved.
+  </div>
+</footer>
+
+</body>
+</html>

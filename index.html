@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Turnaj | Fantasy Football</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="style.css"/>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+
+<!-- BACKDROP (MOBILE ONLY) -->
+<div class="nav-backdrop" id="navBackdrop"></div>
+
+<!-- NAVBAR -->
+<header class="nav">
+  <div class="nav-container">
+    <div class="logo">
+      <img src="images/logo.png" alt="Turnaj Logo" class="logo-image">
+    </div>
+    <nav class="nav-links" id="navLinks">
+      <button class="close-nav" id="closeNav" aria-label="Close menu">×</button>
+      <a href="#" class="nav-link">Home</a>
+      <a href="how-it-works.html" class="nav-link">How It Works</a>
+      <a href="leagues.html" class="nav-link">Leagues</a>
+      <a href="scoring.html" class="nav-link">Scoring</a>
+      <a href="#" class="btn"><i class="fa-solid fa-rocket" aria-hidden="true"></i> Get Started</a>
+    </nav>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open menu">☰</button>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-overlay"></div>
+  <div class="hero-text">
+    <h1>Build Your Dream Team.<br>Dominate Every Matchday.</h1>
+    <p>
+      A fantasy football platform built for strategy,
+      real performance, and competitive players.
+    </p>
+    <button class="primary-btn"><i class="fa-solid fa-user-plus" aria-hidden="true"></i> Create Free Account</button>
+  </div>
+</section>
+
+<!-- SPONSORS & PARTNERS -->
+<section class="sponsors">
+  <h2>Trusted by Top Brands & Clubs</h2>
+  <p class="sponsors-subtitle">Partnering with the world's leading sports organizations</p>
+  <div class="sponsors-slider swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="sponsor-card">
+          <div class="sponsor-logo">
+            <img src="https://res.cloudinary.com/dvpfdgnkw/image/upload/v1772013035/584a9b3bb080d7616d298777_eyiids.png" alt="Barcelona Fc">
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="sponsor-card">
+          <div class="sponsor-logo">
+            <img src="https://res.cloudinary.com/dvpfdgnkw/image/upload/584a9b47b080d7616d298778_zllkax.png" alt="madrid">
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="sponsor-card">
+          <div class="sponsor-logo">
+            <img src="https://res.cloudinary.com/dvpfdgnkw/image/upload/v1772013249/580b57fcd9996e24bc43c4d8_c0zx6v.png" alt="psg">
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="sponsor-card">
+          <div class="sponsor-logo">
+            <img src="https://res.cloudinary.com/dvpfdgnkw/image/upload/580b57fcd9996e24bc43c4e7_kqc9kq.png" alt="Manchester United">
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="sponsor-card">
+          <div class="sponsor-logo">
+            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/0/0c/Liverpool_FC.svg/1200px-Liverpool_FC.svg.png" alt="Liverpool FC">
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="sponsor-card">
+          <div class="sponsor-logo">
+            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/5/53/Arsenal_FC.svg/1200px-Arsenal_FC.svg.png" alt="Arsenal FC">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="swiper-pagination"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </div>
+</section>
+
+<!-- GIFs SHOWCASE -->
+<section class="gifs-showcase">
+  <h2>Action in Motion</h2>
+  <p class="gifs-subtitle">Experience the intensity of fantasy football brought to life</p>
+  <div class="gifs-container">
+    <div class="gif-item">
+      <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExdGd0bnZscm93NjU5cjUzZ3A1ZHJwdzV6aWp3NXZyOWgzNXh2Yjg5MyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/UzbfkwfAvwFov1JHmr/giphy.gif" alt="Fantasy Football Action" loading="lazy">
+    </div>
+    <div class="gif-item">
+      <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExdGd0bnZscm93NjU5cjUzZ3A1ZHJwdzV6aWp3NXZyOWgzNXh2Yjg5MyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/QSqqaQbG6PgrCYjdPZ/giphy.gif" alt="Fantasy Football Gameplay" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="how">
+  <h2>How It Works</h2>
+  <div class="how-grid">
+    <div class="simple-card">
+      <div class="simple-icon">
+        <span class="number">1</span>
+        <i class="fa-solid fa-users"></i>
+      </div>
+      <h3>Pick Your Squad</h3>
+      <p>Build your team from real players. Use your budget wisely to create a winning combination.</p>
+    </div>
+    <div class="simple-card">
+      <div class="simple-icon">
+        <span class="number">2</span>
+        <i class="fa-solid fa-bolt"></i>
+      </div>
+      <h3>Earn Points Weekly</h3>
+      <p>Score points based on real player performance. Live updates every matchday automatically.</p>
+    </div>
+    <div class="simple-card">
+      <div class="simple-icon">
+        <span class="number">3</span>
+        <i class="fa-solid fa-trophy"></i>
+      </div>
+      <h3>Win & Compete</h3>
+      <p>Climb the leaderboards and compete with friends. Top performers win prizes and recognition.</p>
+    </div>
+  </div>
+</section>
+
+<!-- GAME MODES -->
+<section class="modes">
+  <h2>Game Modes</h2>
+  <div class="simple-mode-grid">
+    <div class="mode-item">
+      <div class="mode-icon-simple">
+        <i class="fa-solid fa-crown"></i>
+      </div>
+      <h3>Classic League</h3>
+      <p>Season-long competition with friends or the public. Build strategy across 38 weeks.</p>
+    </div>
+    <div class="mode-item">
+      <div class="mode-icon-simple">
+        <i class="fa-solid fa-bolt"></i>
+      </div>
+      <h3>Weekly Battles</h3>
+      <p>Fast-paced weekly matchups. Pick fresh squads every week and earn quick rewards.</p>
+    </div>
+    <div class="mode-item">
+      <div class="mode-icon-simple">
+        <i class="fa-solid fa-lock"></i>
+      </div>
+      <h3>Private Leagues</h3>
+      <p>Invite-only leagues with custom rules. Create leagues for friends and colleagues.</p>
+    </div>
+  </div>
+</section>
+
+<!-- SPLIT SECTION WITH GALLERY -->
+<section class="split">
+  <div class="split-image">
+    <div class="swiper gallery-swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="gallery-image">
+            <img src="https://images.unsplash.com/photo-1517927033932-b3d18e61fb3a?w=600&h=400&fit=crop" alt="Fantasy Football Dashboard">
+            <div class="image-overlay"><p>Live Dashboard</p></div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="gallery-image">
+            <img src="https://images.unsplash.com/photo-1461896836934-ffe607ba8211?w=600&h=400&fit=crop" alt="Team Management">
+            <div class="image-overlay"><p>Team Management</p></div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="gallery-image">
+            <img src="https://images.unsplash.com/photo-1526232216027-cd871dd93b5e?w=600&h=400&fit=crop" alt="Real-Time Updates">
+            <div class="image-overlay"><p>Real-Time Updates</p></div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="gallery-image">
+            <img src="https://images.unsplash.com/photo-1560169897-fc0cdbdfa4d5?w=600&h=400&fit=crop" alt="Player Stats">
+            <div class="image-overlay"><p>Advanced Analytics</p></div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+    <div class="split-badge">
+      <i class="fa-solid fa-bolt"></i>
+      <p>Live Updates</p>
+    </div>
+  </div>
+  <div class="split-content">
+    <h2>Live Matches. Real-Time Fantasy Points.</h2>
+    <p>
+      Goals, assists, clean sheets, and tactical impact
+      are tracked live so every decision counts.
+    </p>
+    <ul class="split-features">
+      <li><i class="fa-solid fa-check"></i> Instant score updates</li>
+      <li><i class="fa-solid fa-check"></i> Premium analytics</li>
+      <li><i class="fa-solid fa-check"></i> Player comparisons</li>
+    </ul>
+  </div>
+</section>
+
+<!-- SCORING -->
+<section class="scoring">
+  <h2>Smarter Scoring</h2>
+  <div class="score-grid">
+    <div class="score-item">
+      <div class="score-icon"><i class="fa-solid fa-futbol"></i></div>
+      <div>Goals & Assists</div>
+    </div>
+    <div class="score-item">
+      <div class="score-icon"><i class="fa-solid fa-shield"></i></div>
+      <div>Defensive Actions</div>
+    </div>
+    <div class="score-item">
+      <div class="score-icon"><i class="fa-solid fa-person-running"></i></div>
+      <div>Pressing & Positioning</div>
+    </div>
+    <div class="score-item">
+      <div class="score-icon"><i class="fa-solid fa-hourglass-end"></i></div>
+      <div>Minutes Played</div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-strip">
+  <h2>Ready to Compete?</h2>
+  <button class="primary-btn dark"><i class="fa-solid fa-flag-checkered" aria-hidden="true"></i> Join Turnaj Now</button>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-content">
+    <div class="footer-grid">
+      <div>
+        <h3>TURN<span>AJ</span></h3>
+        <p>Fantasy football reimagined for modern competition.</p>
+      </div>
+      <div>
+        <h4>Product</h4>
+        <a href="#">Leagues</a>
+        <a href="#">Scoring</a>
+        <a href="#">Rewards</a>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <a href="#">About</a>
+        <a href="#">Careers</a>
+        <a href="#">Contact</a>
+      </div>
+      <div>
+        <h4>Legal</h4>
+        <a href="#">Terms</a>
+        <a href="#">Privacy</a>
+      </div>
+    </div>
+    <div class="newsletter-section">
+      <h4>Subscribe to Our Newsletter</h4>
+      <p>Get the latest updates and tips straight to your inbox.</p>
+      <div class="newsletter-form">
+        <input
+          type="email"
+          placeholder="Enter your email address"
+          class="newsletter-input"
+        >
+        <button class="newsletter-btn"><i class="fa-solid fa-envelope" aria-hidden="true"></i> Subscribe</button>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    © 2026 Turnaj Fantasy Sports. All rights reserved.
+  </div>
+</footer>
+
+</body>
+</html>

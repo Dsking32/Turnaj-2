@@ -241,9 +241,15 @@ a {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 24px; /* same as .nav-container */
+  padding: 0 24px;
 }
 
+@media (min-width: 900px) {
+  .hero-container {
+    max-width: 960px;
+    padding: 0 20px;
+  }
+}
 
 .hero-overlay {
   position: absolute;

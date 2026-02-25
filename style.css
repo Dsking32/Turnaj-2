@@ -39,9 +39,9 @@ a {
 }
 
 .nav-container {
-  max-width: 1200px;
+  max-width: 1500px;
   margin: auto;
-  padding: 16px 24px;
+  padding: 16px 30px;
 
   display: flex;
   align-items: center;

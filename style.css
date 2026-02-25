@@ -230,14 +230,20 @@ a {
 
 .hero {
   min-height: 90vh;
-  background: url("images/hero 2.jpg")
-    center / cover no-repeat;
+  background: url("images/hero 2.jpg") center / cover no-repeat;
   position: relative;
-
   display: flex;
   align-items: center;
-  padding: clamp(40px, 6vw, 96px);
 }
+
+.hero-container {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px; /* same as .nav-container */
+}
+
 
 .hero-overlay {
   position: absolute;
@@ -251,18 +257,11 @@ a {
 
 .hero-text {
   position: relative;
-  /* match the nav container width so left edges align */
-  max-width: 1200px;
-  margin: 0; /* place at start of .hero (left) */
-  padding: 0 24px; /* same horizontal padding as .nav-container */
+  max-width: 640px;
   text-align: left;
+  transition: transform 0.2s ease-out;
 }
 
-/* keep the hero copy readable by constraining the text column */
-.hero-text h1,
-.hero-text p {
-  max-width: 640px;
-}
 
 .hero h1 {
   font-size: clamp(2.4rem, 5vw, 4rem);
@@ -2103,14 +2102,6 @@ section:not(.how) .card-number {
     opacity: 0;
     transform: scale(4);
   }
-}
-
-/* ==================================================
-   ENHANCED HERO WITH PARALLAX
-================================================== */
-
-.hero-text {
-  transition: transform 0.2s ease-out;
 }
 
 

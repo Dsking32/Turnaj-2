@@ -14,8 +14,8 @@ app.use(express.static(path.join(__dirname, "public")));
 
 const transporter = nodemailer.createTransport({
   host: "smtp.gmail.com",
-  port: 465,
-  secure: true,
+  port: 587,
+  secure: false,
   auth: {
     user: process.env.EMAIL_USER,
     pass: process.env.EMAIL_PASS,
@@ -45,7 +45,7 @@ app.post("/subscribe", async (req, res) => {
       from: "Turnaj Subscriptions <" + process.env.EMAIL_USER + ">",
       to: process.env.ADMIN_EMAIL,
       subject: "New Subscriber: " + email,
-      html: "<div style='font-family:sans-serif;padding:24px;'><h2 style='color:#4f1c93;'>New Newsletter Subscriber</h2><p><strong>Email:</strong> " + email + "</p><p><strong>Time:</strong> " + new Date().toLocaleString("en-GB", { timeZone: "Africa/Lagos" }) + "</p></div>",
+      html: "<div style='font-family:sans-serif;padding:24px;'><h2 style='color:#4f1c93;'>New Newsletter Subscriber</h2><p><strong>Email:</strong> " + email + "</p><p><strong>Time:</strong> " + new Date().toLocaleString('en-GB', { timeZone: 'Africa/Lagos' }) + "</p></div>",
     });
 
     await transporter.sendMail({

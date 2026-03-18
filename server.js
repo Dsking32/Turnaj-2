@@ -1,4 +1,4 @@
-﻿require("dotenv").config();
+require("dotenv").config();
 const express    = require("express");
 const nodemailer = require("nodemailer");
 const cors       = require("cors");
@@ -9,7 +9,7 @@ const PORT = process.env.PORT || 3000;
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-app.use(cors());
+app.use(cors({ origin: ["https://turnaj.mobi", "https://www.turnaj.mobi", "http://localhost:3000"] }));
 app.use(express.static(path.join(__dirname, "public")));
 
 const transporter = nodemailer.createTransport({

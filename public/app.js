@@ -128,7 +128,7 @@ document.addEventListener("DOMContentLoaded", () => {
       input.disabled = true;
 
       try {
-        const res  = await fetch("https://turnaj-2-production.up.railway.app/subscribe", {
+        const res  = await fetch("https://turnaj.mobi/subscribe.php", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({ email }),

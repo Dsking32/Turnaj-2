@@ -1,4 +1,4 @@
-﻿document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", () => {
 
   // ===== MOBILE MENU TOGGLE =====
   const menuToggle = document.getElementById("menuToggle");
@@ -111,7 +111,7 @@
     }, 4000);
   }
 
-  // ===== NEWSLETTER — calls /subscribe on the Node server =====
+  // ===== NEWSLETTER � calls /subscribe on the Node server =====
   document.querySelectorAll(".newsletter-form").forEach((form) => {
     const input = form.querySelector(".newsletter-input");
     const btn   = form.querySelector(".newsletter-btn");
@@ -128,7 +128,7 @@
       input.disabled = true;
 
       try {
-        const res  = await fetch("/subscribe", {
+        const res  = await fetch("https://turnaj-2-production.up.railway.app/subscribe", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({ email }),

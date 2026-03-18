@@ -5,11 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>How It Works | Turnaj</title>
 
-  <!-- STYLES -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <link rel="stylesheet" href="style.css"/>
-
-  <!-- SCRIPT -->
   <script defer src="app.js"></script>
 </head>
 <body>
@@ -20,23 +17,18 @@
 <!-- NAVBAR -->
 <header class="nav">
   <div class="nav-container">
-
     <a href="index.html" class="logo">
       <img src="images/logo.png" alt="Turnaj Logo" class="logo-image">
     </a>
-
     <nav class="nav-links" id="navLinks">
       <button class="close-nav" id="closeNav" aria-label="Close menu">×</button>
-
-      <a href="index.html">Home</a>
-      <a href="how-it-works.html">How It Works</a>
-      <a href="leagues.html">Leagues</a>
-      <a href="scoring.html">Scoring</a>
-        <a href="https://game.turnaj.mobi/auth/login" class="btn"><i class="fa-solid fa-rocket" aria-hidden="true"></i> Get Started</a>
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="how-it-works.html" class="nav-link">How It Works</a>
+      <a href="leagues.html" class="nav-link">Leagues</a>
+      <a href="scoring.html" class="nav-link">Scoring</a>
+      <a href="https://game.turnaj.mobi/auth/login" class="btn"><i class="fa-solid fa-rocket" aria-hidden="true"></i> Get Started</a>
     </nav>
-
     <button class="menu-toggle" id="menuToggle" aria-label="Open menu">☰</button>
-
   </div>
 </header>
 
@@ -54,70 +46,42 @@
 
 <!-- HOW FLOW -->
 <section class="how-flow">
-
   <div class="section-header">
     <h2>Your Journey on Turnaj</h2>
-    <p>
-      A simple, competitive flow designed for real football fans.
-    </p>
+    <p>A simple, competitive flow designed for real football fans.</p>
   </div>
 
   <div class="step-grid">
-
     <div class="step">
       <span>01</span>
       <h3>Create an Account</h3>
-      <p>
-        Sign up in seconds and choose the competitions
-        you want to play in.
-      </p>
+      <p>Sign up in seconds and choose the competitions you want to play in.</p>
     </div>
-
     <div class="step">
       <span>02</span>
       <h3>Draft Your Squad</h3>
-      <p>
-        Build a balanced team using a smart budget
-        based on real player data.
-      </p>
+      <p>Build a balanced team using a smart budget based on real player data.</p>
     </div>
-
     <div class="step">
       <span>03</span>
       <h3>Set Your Lineup</h3>
-      <p>
-        Pick your starting XI, captain, and tactics
-        before each matchday.
-      </p>
+      <p>Pick your starting XI, captain, and tactics before each matchday.</p>
     </div>
-
     <div class="step">
       <span>04</span>
       <h3>Compete Live</h3>
-      <p>
-        Watch your points update in real time
-        as matches are played.
-      </p>
+      <p>Watch your points update in real time as matches are played.</p>
     </div>
-
     <div class="step">
       <span>05</span>
       <h3>Climb the Leaderboard</h3>
-      <p>
-        Your weekly and season performance determines
-        your ranking.
-      </p>
+      <p>Your weekly and season performance determines your ranking.</p>
     </div>
-
     <div class="step">
       <span>06</span>
       <h3>Win Rewards</h3>
-      <p>
-        Top managers earn rewards, recognition,
-        and bragging rights.
-      </p>
+      <p>Top managers earn rewards, recognition, and bragging rights.</p>
     </div>
-
   </div>
 </section>
 
@@ -129,12 +93,11 @@
       Turnaj rewards smart decisions, not just big names.
       Player values reflect form, minutes, and impact.
     </p>
-    <p>
+    <p style="margin-top: 16px;">
       Winning managers identify value early and adapt
       faster than the competition.
     </p>
   </div>
-
   <img
     src="https://images.unsplash.com/photo-1518091043644-c1d4457512c6"
     alt="Football tactics board"
@@ -145,25 +108,43 @@
 <section>
   <div class="section-header">
     <h2>How Scoring Works</h2>
-    <p>
-      Every action on the pitch contributes to your fantasy outcome.
-    </p>
+    <p>Every action on the pitch contributes to your fantasy outcome.</p>
   </div>
 
   <div class="score-grid">
-    <div>Goals & Assists</div>
-    <div>Clean Sheets</div>
-    <div>Defensive Actions</div>
-    <div>Minutes Played</div>
-    <div>Pressing & Work Rate</div>
-    <div>Discipline & Errors</div>
+    <div class="score-item">
+      <div class="score-icon"><i class="fa-solid fa-futbol"></i></div>
+      <div>Goals &amp; Assists</div>
+    </div>
+    <div class="score-item">
+      <div class="score-icon"><i class="fa-solid fa-hand"></i></div>
+      <div>Clean Sheets</div>
+    </div>
+    <div class="score-item">
+      <div class="score-icon"><i class="fa-solid fa-shield"></i></div>
+      <div>Defensive Actions</div>
+    </div>
+    <div class="score-item">
+      <div class="score-icon"><i class="fa-solid fa-hourglass-end"></i></div>
+      <div>Minutes Played</div>
+    </div>
+    <div class="score-item">
+      <div class="score-icon"><i class="fa-solid fa-person-running"></i></div>
+      <div>Pressing &amp; Work Rate</div>
+    </div>
+    <div class="score-item">
+      <div class="score-icon"><i class="fa-solid fa-triangle-exclamation"></i></div>
+      <div>Discipline &amp; Errors</div>
+    </div>
   </div>
 </section>
 
 <!-- CTA -->
 <section class="cta-strip">
   <h2>Ready to Put Your Football Knowledge to the Test?</h2>
-  <a href="https://game.turnaj.mobi/auth/login" class="primary-btn"><i class="fa-solid fa-user-plus" aria-hidden="true"></i> Create Free Account</a>
+  <a href="https://game.turnaj.mobi/auth/login" class="primary-btn">
+    <i class="fa-solid fa-user-plus" aria-hidden="true"></i> Create Free Account
+  </a>
 </section>
 
 <!-- FOOTER -->
@@ -173,6 +154,13 @@
       <div>
         <h3>TURN<span>AJ</span></h3>
         <p>Fantasy football reimagined for modern competition.</p>
+        <div class="footer-social">
+          <a href="https://x.com/turnajfantasy?s=21" aria-label="Twitter / X" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="https://www.instagram.com/turnaj_?igsh=endqejFuNXE5OHhk&utm_source=qr" aria-label="Instagram" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
+          
+          <a href="https://www.tiktok.com/@turnajfantasy_?_r=1&_t=ZS-94mzkCRZIZj" aria-label="TikTok" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-tiktok"></i></a>
+          
+        </div>
       </div>
       <div>
         <h4>Product</h4>
@@ -196,19 +184,20 @@
       <h4>Subscribe to Our Newsletter</h4>
       <p>Get the latest updates and tips straight to your inbox.</p>
       <form class="newsletter-form">
-        <input 
-          type="email" 
-          placeholder="Enter your email address" 
+        <input
+          type="email"
+          placeholder="Enter your email address"
           required
           class="newsletter-input"
         >
-        <button type="submit" class="newsletter-btn"><i class="fa-solid fa-envelope" aria-hidden="true"></i> Subscribe</button>
+        <button type="submit" class="newsletter-btn">
+          <i class="fa-solid fa-envelope" aria-hidden="true"></i> Subscribe
+        </button>
       </form>
     </div>
   </div>
   <div class="footer-bottom">© 2026 Turnaj Fantasy Sports. All rights reserved.</div>
 </footer>
-
 
 </body>
 </html>

@@ -5,11 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Scoring System | Turnaj</title>
 
-  <!-- STYLES -->
   <link rel="stylesheet" href="style.css"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-
-  <!-- SCRIPT -->
   <script defer src="app.js"></script>
 </head>
 <body>
@@ -26,11 +23,11 @@
 
     <nav class="nav-links" id="navLinks">
       <button class="close-nav" id="closeNav" aria-label="Close menu">×</button>
-      <a href="index.html">Home</a>
-      <a href="how-it-works.html">How It Works</a>
-      <a href="leagues.html">Leagues</a>
-      <a href="scoring.html">Scoring</a>
-      <a href="#" class="btn">Get Started</a>
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="how-it-works.html" class="nav-link">How It Works</a>
+      <a href="leagues.html" class="nav-link">Leagues</a>
+      <a href="scoring.html" class="nav-link">Scoring</a>
+      <a href="https://game.turnaj.mobi/auth/login" class="btn"><i class="fa-solid fa-rocket" aria-hidden="true"></i> Get Started</a>
     </nav>
 
     <button class="menu-toggle" id="menuToggle" aria-label="Open menu">☰</button>
@@ -79,15 +76,13 @@
 <section class="scoring-core dark-section">
   <div class="section-header">
     <h2>Core Scoring Categories</h2>
-    <p>
-      These are the actions that define fantasy performance on Turnaj.
-    </p>
+    <p>These are the actions that define fantasy performance on Turnaj.</p>
   </div>
 
   <div class="score-card-grid">
     <div class="score-card">
       <span class="score-icon">⚽</span>
-      <h3>Goals & Assists</h3>
+      <h3>Goals &amp; Assists</h3>
       <p>
         Attacking contributions earn high rewards,
         with position-based weighting.
@@ -123,7 +118,7 @@
 
     <div class="score-card">
       <span class="score-icon">📊</span>
-      <h3>Work Rate & Pressing</h3>
+      <h3>Work Rate &amp; Pressing</h3>
       <p>
         Intelligent movement, pressing, and positioning
         add value beyond goals.
@@ -132,7 +127,7 @@
 
     <div class="score-card">
       <span class="score-icon">⚠️</span>
-      <h3>Discipline & Errors</h3>
+      <h3>Discipline &amp; Errors</h3>
       <p>
         Fouls, cards, and costly mistakes
         reduce a player's score.
@@ -186,35 +181,39 @@
   </div>
 </section>
 
-<!-- TRUST -->
-<section class="split">
-  <div>
-    <h2>Data You Can Trust</h2>
-    <p>
-      All scoring is powered by verified match data
-      and post-match validation.
-    </p>
-    <p>
-      This ensures fairness, consistency,
-      and transparency across every league.
-    </p>
-  </div>
+<!-- DATA YOU CAN TRUST — left-aligned heading, purple-bordered card -->
+<section style="padding: clamp(64px, 8vw, 96px) clamp(20px, 6vw, 96px);">
+  <div class="scoring-trust-section">
+    <div class="scoring-trust-text">
+      <h2>Data You Can Trust</h2>
+      <p>
+        All scoring is powered by verified match data
+        and post-match validation.
+      </p>
+      <p>
+        This ensures fairness, consistency,
+        and transparency across every league.
+      </p>
+    </div>
 
-  <div class="data-box">
-    <h4>Scoring Integrity</h4>
-    <ul>
-      <li>Live event feeds</li>
-      <li>Official match statistics</li>
-      <li>Post-match verification</li>
-      <li>Manual review for anomalies</li>
-    </ul>
+    <div class="data-box">
+      <h4>Scoring Integrity</h4>
+      <ul>
+        <li>Live event feeds</li>
+        <li>Official match statistics</li>
+        <li>Post-match verification</li>
+        <li>Manual review for anomalies</li>
+      </ul>
+    </div>
   </div>
 </section>
 
-<!-- CTA - FIXED (Only one button now) -->
+<!-- CTA -->
 <section class="cta-strip">
   <h2>Build Smarter. Score Better.</h2>
-  <a href="https://game.turnaj.mobi/auth/login" class="primary-btn dark"><i class="fa-solid fa-play" aria-hidden="true"></i> Start Playing Now</a>
+  <a href="https://game.turnaj.mobi/auth/login" class="primary-btn dark">
+    <i class="fa-solid fa-play" aria-hidden="true"></i> Start Playing Now
+  </a>
 </section>
 
 <!-- FOOTER -->
@@ -224,29 +223,32 @@
       <div>
         <h3>TURN<span>AJ</span></h3>
         <p>Fantasy football reimagined for modern competition.</p>
+        <div class="footer-social">
+          <a href="https://x.com/turnajfantasy?s=21" aria-label="Twitter / X" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="https://www.instagram.com/turnaj_?igsh=endqejFuNXE5OHhk&utm_source=qr" aria-label="Instagram" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
+          
+          <a href="https://www.tiktok.com/@turnajfantasy_?_r=1&_t=ZS-94mzkCRZIZj" aria-label="TikTok" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-tiktok"></i></a>
+          
+        </div>
       </div>
-
       <div>
         <h4>Product</h4>
-        <a href="#">Leagues</a>
-        <a href="#">Scoring</a>
-        <a href="#">Rewards</a>
+        <a href="leagues.html">Leagues</a>
+        <a href="scoring.html">Scoring</a>
+        <a href="rewards.html">Rewards</a>
       </div>
-
       <div>
         <h4>Company</h4>
-        <a href="#">About</a>
-        <a href="#">Careers</a>
-        <a href="#">Contact</a>
+        <a href="about.html">About</a>
+        <a href="careers.html">Careers</a>
+        <a href="contact.html">Contact</a>
       </div>
-
       <div>
         <h4>Legal</h4>
-        <a href="#">Terms</a>
-        <a href="#">Privacy</a>
+        <a href="terms.html">Terms</a>
+        <a href="privacy.html">Privacy</a>
       </div>
     </div>
-
     <div class="newsletter-section">
       <h4>Subscribe to Our Newsletter</h4>
       <p>Get the latest updates and tips straight to your inbox.</p>
@@ -263,10 +265,7 @@
       </form>
     </div>
   </div>
-
-  <div class="footer-bottom">
-    © 2026 Turnaj Fantasy Sports. All rights reserved.
-  </div>
+  <div class="footer-bottom">© 2026 Turnaj Fantasy Sports. All rights reserved.</div>
 </footer>
 
 </body>

@@ -9,7 +9,9 @@
   <script defer src="app.js"></script>
 </head>
 <body>
+
 <div class="nav-backdrop" id="navBackdrop"></div>
+
 <header class="nav">
   <div class="nav-container">
     <a href="index.html" class="logo">
@@ -87,7 +89,7 @@
 
 <section class="cta-strip">
   <h2>Join the Turnaj Community</h2>
-  <a href="#" class="primary-btn dark"><i class="fa-solid fa-flag-checkered"></i> Get Started Free</a>
+  <a href="https://game.turnaj.mobi/auth/login" class="primary-btn dark"><i class="fa-solid fa-flag-checkered"></i> Get Started Free</a>
 </section>
 
 <footer class="footer">
@@ -96,6 +98,13 @@
       <div>
         <h3>TURN<span>AJ</span></h3>
         <p>Fantasy football reimagined for modern competition.</p>
+        <div class="footer-social">
+          <a href="https://x.com/turnajfantasy?s=21" aria-label="Twitter / X" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="https://www.instagram.com/turnaj_?igsh=endqejFuNXE5OHhk&utm_source=qr" aria-label="Instagram" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
+          
+          <a href="https://www.tiktok.com/@turnajfantasy_?_r=1&_t=ZS-94mzkCRZIZj" aria-label="TikTok" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-tiktok"></i></a>
+          
+        </div>
       </div>
       <div>
         <h4>Product</h4>
@@ -118,13 +127,14 @@
     <div class="newsletter-section">
       <h4>Subscribe to Our Newsletter</h4>
       <p>Get the latest updates and tips straight to your inbox.</p>
-      <div class="newsletter-form">
-        <input type="email" placeholder="Enter your email address" class="newsletter-input">
-        <button class="newsletter-btn"><i class="fa-solid fa-envelope"></i> Subscribe</button>
-      </div>
+      <form class="newsletter-form">
+        <input type="email" placeholder="Enter your email address" required class="newsletter-input">
+        <button type="submit" class="newsletter-btn"><i class="fa-solid fa-envelope" aria-hidden="true"></i> Subscribe</button>
+      </form>
     </div>
   </div>
   <div class="footer-bottom">© 2026 Turnaj Fantasy Sports. All rights reserved.</div>
 </footer>
+
 </body>
 </html>
